@@ -5,10 +5,11 @@ use IEEE.Std_Logic_1164.all;
 use IEEE.Numeric_Std.all;
 
 
+-- Instantiate a single basic blinker
 architecture Behavioural of CustomWrapper is
 begin
 
-  u_blink: entity work.blink
+  u_blink: entity work.blink_b
     port map (
       clk       => Clk,
       reset     => Reset,
