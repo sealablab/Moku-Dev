@@ -20,18 +20,17 @@ architecture rtl of blink_b is
 begin
   enable <= not control0(15); -- active-low enable
 
- process(clk)
-  begin
-    if rising_edge(clk) then
-      if reset = '1' then
-        cnt <= (others => '0');
-      else
-        cnt <= cnt + 1; -- 1) Update out internal state (cnt)
-      end if; -- if (reset)
-    end if; -- if (rising_ede)
-  end process; -- clk
-
-
+process(clk) 
+begin
+  if rising_edge(clk) then
+    if reset = '1' then
+      cnt <= (others => '0');  -- reset logic
+    elsif enable = '1' then
+      cnt <= cnt + 1;          -- counter updates only when enabled
+    end if;                    -- closes: if reset / elsif enable
+  end if;                      -- closes: if rising_edge(clk)
+end process;                 -- end process (clk)
+      
 -- # Synronous logic:       
   blink_out <= signed(cnt);       -- 2) Assing our counter variable to output
 
