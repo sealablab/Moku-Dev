@@ -2,5 +2,5 @@
 Top level directory for HDL modules
 
 
-## [./Blinkers](https://github.com/sealablab/Moku-Dev/tree/main/HDL/Blinkers)
+## HDL/[Blinkers](https://github.com/sealablab/Moku-Dev/tree/main/HDL/Blinkers)
 Start here if you are just getting comfortable with verilog or VHDL 😀
