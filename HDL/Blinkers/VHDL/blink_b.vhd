@@ -18,7 +18,7 @@ architecture rtl of blink_b is
   signal cnt    : signed(15 downto 0) := (others => '0');
 
 begin
-  enable <= not control0(15); -- active-low enable
+  enable <= not control0(31); -- active-low enable
 
 process(clk) 
 begin
