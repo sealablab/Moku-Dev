@@ -1,6 +1,6 @@
-# [Moku-Dev](https://github.com/sealablab/Moku-Dev):`/`[HDL](https://github.com/sealablab/Moku-Dev/tree/main/HDL)
+# Moku-Dev/[HDL](https://github.com/sealablab/Moku-Dev/tree/main/HDL)
+Top level directory for HDL modules
 
 
 ## [./Blinkers](https://github.com/sealablab/Moku-Dev/tree/main/HDL/Blinkers)
-Top level directory for HDL modules
-
+Start here if you are just getting comfortable with verilog or VHDL 😀
