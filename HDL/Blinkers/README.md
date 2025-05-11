@@ -8,7 +8,7 @@
 **Top.v**  **`Verilog`** Top file. Should always implement a [MokuCustomWrapper]()
 ```
 
-## Basic-Blinker
+## Basic-Blinker (`blink_b.vhd`)
 ``` vhdl
 entity blink_b is
   port (
