@@ -9,7 +9,7 @@
 ```
 
 ## Basic-Blinker
-```
+``` vhdl
 entity blink_b is
   port (
     clk        : in  std_logic;
