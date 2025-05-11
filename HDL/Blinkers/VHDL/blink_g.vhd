@@ -1,4 +1,4 @@
--- blink_g.vhd: This Blinker illustrates how to use [VHDL Generics]()
+-- Binkers/blink_g.vhd: This Blinker illustrates how to use [VHDL Generics]()
 library IEEE;
 use IEEE.Std_Logic_1164.all;
 use IEEE.Numeric_Std.all;
