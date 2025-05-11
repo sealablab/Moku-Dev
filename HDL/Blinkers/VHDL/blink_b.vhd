@@ -25,7 +25,10 @@ begin
       if reset = '1' then
         cnt <= (others => '0');
       else
-        cnt <= cnt + 1;
+        cnt <= cnt + 1; -- This is the whole enchilada 
       end if; -- if (reset)
     end if; -- if (rising_ede)
   end process; -- clk
+
+end architecture; --blink_b
+      

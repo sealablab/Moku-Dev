@@ -6,12 +6,6 @@
 ## [Top.v](https://github.com/sealablab/Moku-Dev/blob/main/HDL/Blinkers/Verilog/Top.v)
 **Top.v**  **`Verilog`** Top file. Should always implement a [MokuCustomWrapper]()
 
-## VHDL
-### `[blink_b.vhd](https://github.com/sealablab/Moku-Dev/blob/main/HDL/Blinkers/VHDL/blink_b.vhd)`
-**Top.v**  **`Verilog`** Top file. Should always implement a [MokuCustomWrapper]()
-
-
-
 
 
 ## 
