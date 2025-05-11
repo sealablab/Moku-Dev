@@ -1,8 +1,9 @@
 -- Binkers/blink_b.vhd: The most basic of blinkers
+
 library IEEE;
 use IEEE.Std_Logic_1164.all;
 use IEEE.Numeric_Std.all;
-
+-- #entity
 entity blink_b is
   port (
     clk        : in  std_logic;
@@ -11,10 +12,10 @@ entity blink_b is
     blink_out  : out signed(15 downto 0)
   );
 end entity;
-
+-- # architecture
 architecture rtl of blink_b is
   signal enable : std_logic;
-  signal cnt    : unsigned(15 downto 0) := (others => '0');
+  signal cnt    : signed(15 downto 0) := (others => '0');
 
 begin
   enable <= not control0(15); -- active-low enable
@@ -25,10 +26,17 @@ begin
       if reset = '1' then
         cnt <= (others => '0');
       else
-        cnt <= cnt + 1; -- This is the whole enchilada 
+        cnt <= cnt + 1; -- 1) Update out internal state (cnt)
       end if; -- if (reset)
     end if; -- if (rising_ede)
   end process; -- clk
 
+
+-- # Synronous logic:       
+  blink_out <= signed(cnt);       -- 2) Assing our counter variable to output
+
 end architecture; --blink_b
-      
+
+-- Blinkers/blink_b.vhd: The most basic of blinkers (EOF)
+
+
