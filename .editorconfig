@@ -1,0 +1,56 @@
+# .editorconfig — Consistent formatting across editors (Vim, VS Code, Cursor)
+root = true
+
+# Default for all files
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+# HDL: VHDL and Verilog
+[*.vhd]
+indent_size = 2
+indent_style = space
+
+[*.v]
+indent_size = 2
+indent_style = space
+
+# Markdown: Obsidian / Documentation
+[*.md]
+trim_trailing_whitespace = false  # allow double-space line breaks
+indent_size = 2
+indent_style = space
+
+# Makefiles (must use tabs!)
+[Makefile]
+indent_style = tab
+
+[*.mk]
+indent_style = tab
+
+# Python
+[*.py]
+indent_style = space
+indent_size = 4
+
+# JSON / TOML / YAML
+[*.json]
+indent_style = space
+indent_size = 2
+
+[*.toml]
+indent_style = space
+indent_size = 2
+
+[*.yml]
+indent_style = space
+indent_size = 2
+
+# Shell scripts
+[*.sh]
+indent_style = space
+indent_size = 2
