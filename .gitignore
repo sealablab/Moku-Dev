@@ -22,4 +22,30 @@ tags
 # Persistent undo
 [._]*.un~
 
-# End of https://www.toptal.com/developers/gitignore/api/vim
+## GHDL
+# GHDL build artifacts
+*.cf
+work/
+*.o
+*.ali
+
+# Simulation outputs
+*.vcd
+*.ghw
+*.wlf
+
+# GTKWave GUI session files
+*.gtkw
+
+# Optional logs/debug
+*.log
+*.out
+*.dump
+
+# VS Code, cursor, or editor temp files
+.vscode/
+.idea/
+*.swp
+*~
+## MacOS misc:
+.DS_Store
