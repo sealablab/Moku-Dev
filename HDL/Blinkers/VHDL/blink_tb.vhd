@@ -9,7 +9,7 @@ architecture sim of blink_tb is
   signal clk        : std_logic := '0';
   signal reset      : std_logic := '0';
   signal control0   : std_logic_vector(31 downto 0) := (others => '1');
-  signal blink_out  : std_logic;
+  signal blink_out  : signed(15 downto 0);
 begin
   -- Instantiate the blink DUT (Design Under Test)
   uut: entity work.blink
